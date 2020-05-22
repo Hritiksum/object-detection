@@ -1,0 +1,70 @@
+{% extends 'index.html' %}
+{% block title %}Upload{% endblock %}
+{% block content %}
+<div class="container-fluid" style="margin-top: 1rem;margin-bottom: 5rem;">
+    <div class="row">
+        <div class="col-md-6" style="margin: 0 auto;">
+            <!-- Card -->
+            <div class="card" style="margin-bottom: 1rem;">
+
+                <!-- Card image -->
+                <div class="view overlay">
+                    <img class="img-fluid"
+                        src="/static/json.png"
+                        alt="Card image cap" style="animation: linear;">
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body">
+                    <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                    <h4 class="card-title" style="text-align: center;margin: 0 auto;">Upload Section</h4>
+                    <p class="card-text" style="text-align:center"></br>Upload TEXT files containing r/India URLs here. This endpoint will
+                        be used for testing performance of the classifier. We can send an automated POST request to
+                        the end point with a .txt file which contains a link of a r/india post in every line. Response of the
+                        request is a json file in which key is the link to the post and value predicted
+                        flare.</p>
+                    <form  action="{%  url 'APIresult'  %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" accept=".txt" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01" name="document" required>
+                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                      </div>
+
+
+
+                    </br></br>
+                    <div class="col-md-12 col-lg-12 mb-4">
+                        <button type="submit" class="btn btn-info btn-rounded" style="display: block;margin: 0 auto;">Get Predictions</button>
+          
+                       
+                      </div>
+                        
+            
+                    </form>
+                </li>
+                    
+                </div>
+
+            </div>
+            <!-- Card -->
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 1rem;">
+        <a href="/" class="btn btn-primary" style="margin: 0 auto;display: block;">Home</a>
+    </div>
+</div>
+
+
+
+{% endblock %}
+

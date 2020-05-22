@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% block title %}About Page{% endblock %}
+{% block content %}
+
+    <div class="container-fluid" style="margin-top: 1rem;margin-bottom: 5rem;">
+        <div class="row">
+            <div class="col-md-4" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+    
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/ai.jpg"
+                            alt="Card image cap" style="animation: linear;">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+    
+                        <!-- Title -->
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <h4 class="card-title" style="text-align: center;margin: 0 auto;">About This Application</h4>
+                        <!-- Text -->
+                        
+                        <p class="card-text" style="text-align:center"></br>This application predicts corresponding flair for a given post of subreddit India.</p>
+                        <!-- Button -->
+                        <p class="card-text" style="text-align:center">API : http://reddit-realtime-analysis.herokuapp.com/api?query="Here goes some text"</p>
+                        <p class="card-text" style="text-align:center"><strong>API Usage</strong></p>
+                        <p class="card-text" style="text-align:center"><a href="http://reddit-realtime-analysis.herokuapp.com/api?query=https://www.reddit.com/r/india/comments/fwmlfp/bjps_bs_yeddyurappa_bsy_annoys_the_it_cell_and/">http://reddit-realtime-analysis.herokuapp.com/api?query=https://www.reddit.com/r/india/comments/fwmlfp/bjps_bs_yeddyurappa_bsy_annoys_the_it_cell_and/</a></p>
+                        <p class="card-text" style="text-align:center"><strong>Endpoint for Automated Testing</strong></p>
+                        <p class="card-text" style="text-align:center"><a href="">https://reddit-realtime-analysis.herokuapp.com/automated_testing</a></p>
+                        </li>
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 1rem;">
+            <a href="/" class="btn btn-primary" style="margin: 0 auto;display: block;">Home</a>
+        </div>
+    </div>
+
+{% endblock %}    

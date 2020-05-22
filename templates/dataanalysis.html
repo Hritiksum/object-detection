@@ -1,0 +1,409 @@
+{% extends 'index.html' %}
+{% block title %}Data Analysis{% endblock %}
+{% block content %}
+
+    <div class="container-fluid" style="margin-top: 1rem;margin-bottom: 5rem;">
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                        <!-- Title -->
+                        
+                        <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.1: Distribution of data under various Flairs.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/donut.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Distribution of data under various Flairs.</h5>
+
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:center"></br>Distribution of data under various flairs is shown in this donut.</p>
+                        <ul><p class="card-text" style="text-align:justify"></br>Data is collected from PRAW: The Python Reddit API Wrapper for various flairs for instance:
+                            “Food”, “Coronavirus”, “Business/Finance”, “AskIndia”, “Sports”, “Science/Technology”, “Scheduled”, “Politics”, “Policy/Economy”, “Photography” and “Non-Political”. It is ensured that proportion of data taken remains even in all 11 flairs. 
+                            </p></ul>
+                            <ul><p class="card-text" style="text-align:justify">Data is preprocessed before feeding it into classifier using two processing steps:</br> 
+                                </p></ul>
+                                <ul>
+                                <li><p class="card-text" style="text-align:justify">Punctuation marks like “,”, “!”, “?” etc. are removed using regular expressions in python.</br> 
+                                </p></li>
+                                <li><p class="card-text" style="text-align:justify">Stop words like “the”, “is” etc. are removed using Spacy Library in python.</br> 
+                                </p></li></ul>
+
+                        <!-- Button -->
+                        
+                        </li>
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.2: Flairs distribution with upvotes.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/upvotes.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Flairs distribution with upvotes.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>Upvote is a method on the website Reddit by which users can signal their approval or support for a post. Upvotes move a post towards the top of the site, and they are a way to measure how many people approve of the content that is in a post. It is observed that largest upvotes are seen in” Politics” flair. </p>
+                        <!-- Button -->
+                        
+                        </li>
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.3: Flairs distribution with number of comments.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/comments.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Flairs distribution with number of comments.</h5>
+                        <!-- Text -->
+                        <ul>
+                        <p class="card-text" style="text-align:justify"></br>Number of comments may signify an answer to a topic, AskIndia has largest number of comments as this flair consists of questions answered by various users. </p>
+                        <!-- Button -->
+                    </ul>
+                    <ul><p class="card-text" style="text-align:justify"></br><strong>From above visualization it can be concluded that AskIndia is most used flair among others and people spend a lot of time here in Question/Answers </strong> </p></ul>
+                        
+                        </li>
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+
+
+        
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.4: Relation Between Posts and their creation time.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/tweet and hours cleear.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Relation Between Posts and their creation time.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>Relation between posts and hours of post: It is found that posts were maximum at 1300 and 1400 hours. Which states that this is the best time to advertise on reddit as a greater number of online users mean a greater number of views.</p>
+                        <!-- Button -->
+                        </li>
+    
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.5: Users who post the most on Reddit.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/bot detected clear.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Users who post the most on Reddit.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>From this visualization we can infer that number of posts “AutoModerator” created were more than 2 times posts created by user “hipporama” which looks quite suspicious. On analyzing his posts, it can be concluded that this is a bot.</p>
+                        <!-- Button -->
+                        </li>
+    
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.6: Suspicious activity of Bot.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/bot.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Suspicious activity of Bot.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>This Bot post same content, the same content can be found in all the flairs of Reddit as inferred from above visualization.</p>
+                        <!-- Button -->
+                        </li>
+    
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.7: Variation in Offensive Post with years.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/variationin offensive posts.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Variation in Offensive Post with years.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:center"></br>It is found that the number of offensive words in 2020 were maximum.</p>
+                        <!-- Button -->
+                        
+                        </li>
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.8: Relation between Forums and Offensive Posts in them.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/forums and offensive tweets clear check.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Relation between Forums and Offensive Posts in them.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>It was found that the number of offensive words used in “Politics” sub-forum were most as compared to other subforums. And offensive words used in “Science/Technology” were least.</p>
+                        <!-- Button -->
+                        </li>
+    
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.9: Targeted themes under Offensive Posts.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/offcloud2020.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Targeted themes under Offensive Posts.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>From “Word Cloud” we can infer that the target of these offensive posts were “Religion”, “Time”, “Government”, “Lockdown” and “Coronavirus”.</p>
+                        <!-- Button -->
+                        </li>
+    
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.10: Distribution Of offensive Posts in 2020.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/offposts vs neither 2020.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Distribution Of offensive Posts in 2020.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify">It was found that the number of offensive words used in “Politics” sub-forum were most as compared to other subforums. On analyzing the targeted themes covered in offensive posts, it was inferred that offensive posts were directed to “Religion”, “Time”, “Government”, “Lockdown” and “Coronavirus”, which denotes that people are frustrated with these topics. From distribution of offensive posts in 2020 it can be concluded that offensive posts started spiking from January 2020 and reached their peak in march when difficulties for common people increased due to “Lockdown” and “Coronavirus”, which means that if Coronavirus lasts for some more months these offensive posts will increase.</br></p>
+                        <!-- Button -->
+                        </li>
+    
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.11: Distribution Of offensive Posts in 2019.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/nooffensive2019.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Distribution Of offensive Posts in 2019.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>In 2019 offensive posts were relatively low as compared to 2020 as concluded from visualization.</p>
+                        <!-- Button -->
+                        
+                        </li>
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <!-- Card -->
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h4 class="blue-text pb-2" style="text-align: center;margin: 0 auto;color:black"></br><strong style="color:black">Fig.12: Sentiment analysis in different Flairs.</strong></h4>
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="img-fluid"
+                            src="/static/happy and sad discussions.png"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <li class="list-group-item" style="text-align: center;margin: 0 auto;" >
+                        <!-- Title -->
+                        <h5 class="blue-text pb-2" style="text-align: center;margin: 0 auto;">Sentiment analysis in different Flairs.</h5>
+                        <!-- Text -->
+                        <p class="card-text" style="text-align:justify"></br>It is found that sentiment scores which tells that sentence is positive or negative were least for Coronavirus Flair due to irreparable destruction and havoc it has created. People were depressed and sad while posting posts in this flair. While in photography people were happier the most as compared to other Flairs as in these days “Nature” is healing itself in these days due to lack of destructive activity caused by Human Beings. </p>
+                        <!-- Button -->
+                        
+                        </li>
+                    </div>
+    
+                </div>
+                <!-- Card -->
+            </div>
+        </div>
+ 
+        <div class="row" style="margin-bottom: 1rem;">
+            <a href="/" class="btn btn-primary" style="margin: 0 auto;display: block;">Home</a>
+        </div>
+    </div>
+
+{% endblock %}    
