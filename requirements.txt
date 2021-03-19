@@ -45,7 +45,7 @@ django-cors-middleware==1.5.0
 django-heroku==0.3.1
 django-postgres-copy==2.3.1
 django-reset-migrations==0.4.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 docutils==0.15.2
 en-core-web-sm==2.2.0
 entrypoints==0.3
