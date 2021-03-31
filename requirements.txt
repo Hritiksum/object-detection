@@ -98,7 +98,7 @@ keyboard==0.13.4
 kiwisolver==1.1.0
 lazy-object-proxy==1.4.3
 livereload==2.6.1
-lxml==4.5.0
+lxml==4.6.3
 Markdown==3.1.1
 MarkupSafe==1.1.1
 matplotlib==3.1.1
