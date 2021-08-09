@@ -158,7 +158,7 @@ python-whois==0.7.2
 python3-openid==3.1.0
 pyttsx3==2.71
 pytz==2019.3
-pywin32==227
+pywin32==301
 pywinpty==0.5.5
 PyYAML==5.3
 pyzmq==18.1.1
