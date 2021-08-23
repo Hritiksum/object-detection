@@ -112,7 +112,7 @@ nbdev==0.2.16
 nbformat==4.4.0
 networkx==2.4
 nltk==3.4.5
-notebook==6.0.3
+notebook==6.4.1
 numexpr==2.7.1
 numpy==1.18.1
 nvidia-ml-py3==7.352.0
