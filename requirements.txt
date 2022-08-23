@@ -107,7 +107,7 @@ mistune==0.8.4
 more-itertools==7.2.0
 murmurhash==1.0.2
 mxnet==1.5.0
-nbconvert==5.6.1
+nbconvert==6.5.1
 nbdev==0.2.16
 nbformat==4.4.0
 networkx==2.4
